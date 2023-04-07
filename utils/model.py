@@ -52,7 +52,7 @@ class Perceptron:
         print(f"\ntotal loss: {total_loss}\n")
         return total_loss
     
-    def create_dir_return_path(self, model_dir, filename):
+    def _create_dir_return_path(self, model_dir, filename):
         os.makedirs(model_dir, exist_ok=True)
         return os.path.join(model_dir, filename)
     
